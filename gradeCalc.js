@@ -26,9 +26,12 @@ function calculateGrade() {
     }
 
     let finalGrade = weightedGrade / totalWeight;
-
-    if (isNaN(finalGrade)) {
-        document.getElementById("p1error").innerHTML = "Invalid Input";
+    if (isNaN(totalWeight) || totalWeight == 0) {
+        document.getElementById("p1error").innerHTML = "Please Enter Valid Weight(s)";
+        return;
+    }
+    else if (totalWeight > 1 || totalWeight < 0) {
+        document.getElementById("p1error").innerHTML = "Total weight of grades is too high";
         return;
     }
 
