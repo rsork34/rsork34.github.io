@@ -3,7 +3,9 @@
 <meta charset="UTF-8">
 <script src="gradeCalc.js"></script>
 <style>
-    .centerButton {
+    .mediumButton {
+        width: 70px;
+        height: 30px;
         display: block;
         margin-right: auto;
         margin-left: auto;
@@ -70,7 +72,8 @@
 </table>
 </form>
 <div>
-    <input id="submit" class="centerButton" type="button" value="submit" onclick=" calculateGrade();"/>
+    <input id="reset" type="button" class="mediumButton" value="reset"/>
+    <input id="submit" class="mediumButton" type="button" value="submit" onclick=" calculateGrade();"/>
     <p class="whiteText" id="p1error" align="center">Please Enter Grades</p>
 </div>
 </html>
