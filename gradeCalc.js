@@ -25,16 +25,20 @@ function calculateGrade() {
         gradeArray.push(tempGrade);
     }
 
+    // Calculate final grade
     let finalGrade = weightedGrade / totalWeight;
+    
+    // Invalid input
     if (isNaN(totalWeight) || totalWeight == 0) {
         document.getElementById("p1error").innerHTML = "Please Enter Valid Weight(s)";
         return;
     }
+    // Invalid weight entered
     else if (totalWeight > 1 || totalWeight < 0) {
         document.getElementById("p1error").innerHTML = "Total weight of grades is too high";
         return;
     }
 
-    document.getElementById("p1error").innerHTML = "Grade: " + finalGrade;
+    document.getElementById("p1error").innerHTML = "Grade: " + finalGrade.toPrecision(4);
 
 }
