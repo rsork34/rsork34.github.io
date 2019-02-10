@@ -42,3 +42,12 @@ function calculateGrade() {
     document.getElementById("p1error").innerHTML = "Grade: " + finalGrade.toPrecision(4);
 
 }
+
+function resetInput() {
+    let inputFields = document.getElementById("inputForm");
+
+    for (i = 0; i < inputFields.length; i++) {
+        inputFields[i].value = 0;
+        inputFields[i].weight = 0;
+    }
+}

@@ -4,11 +4,12 @@
 <script src="gradeCalc.js"></script>
 <style>
     .mediumButton {
+        display:inline-block;
         width: 70px;
         height: 30px;
         display: block;
-        margin-right: auto;
         margin-left: auto;
+        margin-right:auto;
     }
 
     header {
@@ -35,46 +36,46 @@
 
 </style>
 
+<title>Grade Calculator</title>
+
 <header align="center">Calculate Weighted Grade</header>
 
 <form id="inputForm">
-<table align="center">
-    <tr>
-        <th>Assignment</th>
-        <th>Grade (0-100%)</th>
-        <th>Weight (0-100%)</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td><input type="number" name="grade" value="0.0"></td>
-        <td><input type="number" name="weight" value="0.0"></td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td><input type="number" name="grade" value="0.0"></td>
-        <td><input type="number" name="weight" value="0.0"></td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td><input type="number" name="grade" value="0.0"></td>
-        <td><input type="number" name="weight" value="0.0"></td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td><input type="number" name="grade" value="0.0"></td>
-        <td><input type="number" name="weight" value="0.0"></td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td><input type="number" name="grade" value="0.0"></td>
-        <td><input type="number" name="weight" value="0.0"></td>
-    </tr>
-</table>
+    <table align="center">
+        <tr>
+            <th>Assignment</th>
+            <th>Grade (0-100%)</th>
+            <th>Weight (0-100%)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td><input type="number" name="grade" placeholder="0.0"></td>
+            <td><input type="number" name="weight" placeholder="0.0"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><input type="number" name="grade" placeholder="0.0"></td>
+            <td><input type="number" name="weight" placeholder="0.0"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><input type="number" name="grade" placeholder="0.0"></td>
+            <td><input type="number" name="weight" placeholder="0.0"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><input type="number" name="grade" placeholder="0.0"></td>
+            <td><input type="number" name="weight" placeholder="0.0"></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><input type="number" name="grade" placeholder="0.0"></td>
+            <td><input type="number" name="weight" placeholder="0.0"></td>
+        </tr>
+    </table>
 </form>
-<div>
-    <input id="reset" type="button" class="mediumButton" value="reset"/>
-    <input id="submit" class="mediumButton" type="button" value="submit" onclick=" calculateGrade();"/>
-    <p class="whiteText" id="p1error" align="center">Please Enter Grades</p>
-</div>
-</html>
+<br><input id="reset" type="button" class="mediumButton" value="RESET" onclick="resetInput()">
+<br><input id="submit" class="mediumButton" type="button" value="SUBMIT" onclick=" calculateGrade();" />
+<p class="whiteText" id="p1error" align="center">Please Enter Grades</p>
 
+</html>
