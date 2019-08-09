@@ -34,9 +34,7 @@ function calculateGrade() {
     let totalWeight = 0;
     let weightedGrade = 0;
 
-    for (let row of rows) {
-        console.log(row);
-    }
+    console.log(rows);
 
     return;
 
