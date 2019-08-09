@@ -1,3 +1,5 @@
+const NUM_ROWS = 10;
+
 class grade {
     constructor(mark, weight) {
         this.mark = mark;
@@ -16,8 +18,8 @@ function loadTable() {
 
     let tableHtmlString = '';
 
-    // Load 10 rows for the table
-    for (let i = 0; i < 5; i++) {
+    // Load table rows
+    for (let i = 0; i < NUM_ROWS; i++) {
         tableHtmlString += `<tr><td>${i + 1}</td>`;
         tableHtmlString += `<td><input type="number" placeholder="0.0"></td>`;
         tableHtmlString += `<td><input type="number" placeholder="0.0"></td></tr>`;
