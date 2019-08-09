@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 
-<head>
-    <link rel="stylesheet" href="style.css">
-    <html lang="en">
+<html lang="en">
+    <head>
+        <title>Weighted Grade Calculator</title>
         <meta charset="UTF-8">
+        <meta name="description" content="Free online weighted grade
+            calculator">
+        <meta name="keywords" content="weighted, grade, calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-
     </head>
+    <body class="bgColour">
+        <header style="text-align: center;">Weighted Grade Calculator</header>
+        <table id="gradesInputTable" class="table center">
+            <thead style="text-align: center;">
+                <tr>
+                    <th>Assignment</th>
+                    <th>Grade (0-100%)</th>
+                    <th>Weight (0-100%)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <br>
 
-    <title>Grade Calculator</title>
+        <div class="centerButton">
+            <button type="button" class="btn btn-success btn-lg"
+                onclick="calculateGrade();">SUBMIT</button>
+            <button type="button" class="btn btn-warning btn-lg"
+                onclick="loadTable();">RESET</button>
+            <button type="button" class="btn btn-primary btn-lg"
+                onclick="addRow();">ADD ROW</button>
+        </div>
+    </body>
 
-    <header style="text-align: center;">Calculate Weighted Grade</header>
 
-    <table id="gradesInputTable" class="center">
-        <thead>
-            <tr>
-                <th>Assignment</th>
-                <th>Grade (0-100%)</th>
-                <th>Weight (0-100%)</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-
-    <br><input id="reset" type="button" class="mediumButton" value="RESET"
-        onclick="resetInput()">
-    <br><input id="submit" class="mediumButton" type="button" value="SUBMIT"
-        onclick="calculateGrade();" />
-    <p class="whiteText" id="p1error" align="center">Please Enter Grades</p>
     <footer>
         <script src="gradeCalc.js"></script>
     </footer>
