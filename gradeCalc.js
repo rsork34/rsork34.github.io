@@ -8,7 +8,7 @@ class grade {
 }
 
 $(document).ready(function () { 
-    loadTable();
+    
 });
 
 // Loads rows of grade input table
