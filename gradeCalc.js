@@ -8,7 +8,7 @@ class grade {
 }
 
 $(document).ready(function () { 
-    
+    loadTable();
 });
 
 // Loads rows of grade input table
@@ -30,9 +30,15 @@ function loadTable() {
 
 function calculateGrade() {
     let gradeArray = [];
-    let inputFields = document.getElementById("inputForm");
+    let rows = $('#gradesInputTable > tbody > tr');
     let totalWeight = 0;
     let weightedGrade = 0;
+
+    for (let row of rows) {
+        console.log(row);
+    }
+
+    return;
 
     // Add each row of grade/weight to array of grades
     for (let i = 0, j = 0; i < inputFields.length; i+= 2, j++) {
