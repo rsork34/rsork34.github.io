@@ -25,7 +25,7 @@ function loadTable() {
         tableHtmlString += `<td><input type="number" placeholder="0.0"></td></tr>`;
     }
 
-    $('#gradesInputTable tbody').html(tableHtmlString);
+    $('#gradesInputTable').append(tableHtmlString);
 }
 
 function calculateGrade() {
