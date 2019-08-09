@@ -1,0 +1,35 @@
+.mediumButton {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+table {
+    font-size: 20px;
+    padding: 10px;
+    border: 5px solid gray;
+    background-color: white;
+}
+
+body {
+    background-color: rgb(6, 6, 44);
+}
+
+.whiteText {
+    color: aliceblue;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}

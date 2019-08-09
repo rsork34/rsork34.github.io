@@ -5,6 +5,27 @@ class grade {
     }
 }
 
+$(document).ready(function () { 
+    loadTable();
+});
+
+// Loads rows of grade input table
+function loadTable() {
+    // Delete all table rows
+    $('#gradesInputTable tbody').empty();
+
+    let tableHtmlString = '';
+
+    // Load 10 rows for the table
+    for (let i = 0; i < 5; i++) {
+        tableHtmlString += `<tr><td>${i + 1}</td>`;
+        tableHtmlString += `<td><input type="number" placeholder="0.0"></td>`;
+        tableHtmlString += `<td><input type="number" placeholder="0.0"></td></tr>`;
+    }
+
+    $('#gradesInputTable tbody').html(tableHtmlString);
+}
+
 function calculateGrade() {
     let gradeArray = [];
     let inputFields = document.getElementById("inputForm");
